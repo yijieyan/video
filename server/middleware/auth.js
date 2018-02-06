@@ -57,15 +57,15 @@ module.exports = async function(ctx, next){
     };
     if(ctx.url == '/favicon.ico') return;
 
-    if(ctx.path.startsWith('/public')) {
-        console.log(ctx.path);
-    }else {
-        let token = ctx.req.headers.token;
-        let user= await ctx.getSession(token);
-        if(!token) {
-            throw new commonError.tokenValidationFailure();
-        }
-        ctx.userId = user.userId;
-    }
+    // if(ctx.path.startsWith('/public')) {
+    //     console.log(ctx.path);
+    // }else {
+    //     let token = ctx.req.headers.token;
+    //     let user= await ctx.getSession(token);
+    //     if(!token) {
+    //         throw new commonError.tokenValidationFailure();
+    //     }
+    //     ctx.userId = user.userId;
+    // }
     await next();
 };

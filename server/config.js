@@ -6,7 +6,6 @@ module.exports = {
         host: 'localhost'
     },
     enable: true ,  //是否开启利用多核cpu
-    accessKey: '',
-    secretKey: '',
+   
     bucket: 'movies'
 };

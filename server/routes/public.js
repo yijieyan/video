@@ -17,6 +17,11 @@ fs.existsSync(upload) ? '' : mkdirp.sync(path.join(__dirname,'../' ,dest));
 
 router.prefix('/public');
 
+
+
+
+
+
 /**
  * 上传文件（支持多文件上传）
  */

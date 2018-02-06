@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "koa-view": "^2.1.1",
+    "koa-views": "^6.1.3"
+  }
+}
